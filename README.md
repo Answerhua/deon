@@ -1,6 +1,6 @@
 # Deon
 Deon是一款高性能，基于c++11的多线程服务器,可处理静态资源，可以解析get、head请求。
-
+[![Build Status](https://travis-ci.org/Answerhua/deon.svg?branch=master)](https://travis-ci.org/Answerhua/deon)
 ## Envoirment
 - 操作系统
 	- Unbuntu 14.04 and above
