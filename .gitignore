@@ -2,5 +2,5 @@ CMakeCache.txt
 CMakeFiles
 *.cmake
 *.a
-*.swap
+*.swp
 Makefile
