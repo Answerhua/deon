@@ -503,7 +503,7 @@ int Http::analysisRequest()
         struct stat sbuf;
         if (stat(fileName.c_str(), &sbuf) < 0)
         {
-            handleError(fd_, 4041, "Not Found!");
+            handleError(fd_, 404, "Not Found!");
             return -1;
         }
         if (!(S_ISREG(sbuf.st_mode)) || !(S_IRUSR & sbuf.st_mode))
@@ -527,7 +527,7 @@ int Http::analysisRequest()
         int src_fd = open(fileName.c_str(), O_RDONLY, 0);
         if (src_fd < 0)
         {
-            handleError(fd_, 4042, "Not Found");
+            handleError(fd_, 404, "Not Found");
             return -1;
         }
 
